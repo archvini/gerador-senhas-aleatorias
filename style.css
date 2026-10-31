@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+:root {
+    --rose-50: #fff5f7;
+    --rose-100: #ffe4ec;
+    --rose-200: #ffc9d8;
+    --rose-400: #e98aa5;
+    --rose-600: #bd5574;
+    --rose-700: #98445e;
+    --ink: #503943;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,20 +22,26 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #eb65eb;
+    padding: 1.25rem;
+    color: var(--ink);
+    background: radial-gradient(ellipse at top, #fffafd 0%, var(--rose-100) 100%);
 }
 
 .container {
-    width: 450px;
+    width: min(100%, 450px);
     background: #fff;
-    border-radius: 8px;
+    border: 1px solid #f6dce4;
+    border-radius: 16px;
+    box-shadow: 0 18px 50px #9b52631c;
+    overflow: hidden;
 }
 
 .container h2 {
     font-weight: 600;
     font-size: 1.31rem;
     padding: 1rem 1.175rem;
-    border-bottom: 1px solid #d4dbe5;
+    color: var(--rose-700);
+    border-bottom: 1px solid #f5e1e7;
 }
 
 .wrapper {
@@ -39,29 +55,59 @@ body {
 .input-box input {
     width: 100%;
     height: 53px;
-    color: #000;
+    color: var(--ink);
     background: none;
     font-size: 1.06rem;
     font-weight: 500;
-    border-radius: 4px;
-    letter-spacing: 1.4px;
-    border: 1px solid #aaa;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    border: 1px solid #edcbd5;
     padding: 0 2.85rem 0 1rem;
 }
 
-.input-box span {
+.input-box .copy-btn {
     position: absolute;
-    right: 13px;
-    cursor: pointer;
-    line-height: 53px;
-    color: #707070;
+    top: 50%;
+    right: 8px;
+    display: grid;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    place-items: center;
+    transform: translateY(-50%);
+}
+
+.btn-outline-rose {
+    --bs-btn-color: var(--rose-600);
+    --bs-btn-border-color: var(--rose-200);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--rose-600);
+    --bs-btn-hover-border-color: var(--rose-600);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--rose-700);
+    --bs-btn-active-border-color: var(--rose-700);
+    --bs-btn-focus-shadow-rgb: 189, 85, 116;
+}
+
+.btn-rose {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--rose-400);
+    --bs-btn-border-color: var(--rose-400);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--rose-600);
+    --bs-btn-hover-border-color: var(--rose-600);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--rose-700);
+    --bs-btn-active-border-color: var(--rose-700);
+    --bs-btn-focus-shadow-rgb: 189, 85, 116;
+    font-weight: 600;
 }
 
 .wrapper .pass-indicator {
     width: 100%;
     height: 4px;
     position: relative;
-    background: #dfdfdf;
+    background: var(--rose-100);
     margin-top: 0.75rem;
     border-radius: 25px;
 }
@@ -87,7 +133,7 @@ body {
 
 .pass-indicator#strong::before {
     width: 100%;
-    background: #d139bd;
+    background: var(--rose-400);
 }
 
 .wrapper .pass-length {
@@ -102,6 +148,7 @@ body {
 .pass-length input {
     width: 100%;
     height: 5px;
+    accent-color: var(--rose-600);
 }
 
 .pass-settings .options {
@@ -130,6 +177,7 @@ body {
     height: 16px;
     width: 16px;
     cursor: pointer;
+    accent-color: var(--rose-600);
 }
 
 .options .option label {
@@ -139,14 +187,18 @@ body {
 
 .wrapper .generate-btn {
     width: 100%;
-    color: #fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #e242f4;
     font-size: 1.06rem;
     padding: 0.94rem 0;
-    border-radius: 5px;
-    text-transform: uppercase;
+    border-radius: 8px;
     margin: 0.94rem 0 1.3rem;
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        margin: 1.1rem 1.25rem;
+    }
+
+    .pass-settings .options .option {
+        width: 100%;
+    }
 }
