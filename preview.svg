@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="title description">
+  <title id="title">Prévia do Gerador de Senhas</title>
+  <desc id="description">Interface rosa para gerar uma senha, selecionar seu tamanho e personalizar os tipos de caracteres.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fffafd"/>
+      <stop offset="1" stop-color="#ffe4ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#9b5263" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="960" height="620" rx="24" fill="url(#background)"/>
+  <g filter="url(#shadow)">
+    <rect x="250" y="44" width="460" height="532" rx="16" fill="#fff" stroke="#f6dce4"/>
+    <path d="M266 44h428a16 16 0 0 1 16 16v48H250V60a16 16 0 0 1 16-16Z" fill="#fff"/>
+    <text x="282" y="91" fill="#98445e" font-family="Arial,sans-serif" font-size="24" font-weight="700">Gerador de senhas</text>
+    <path d="M250 108h460" stroke="#f5e1e7"/>
+    <rect x="282" y="135" width="396" height="54" rx="8" fill="#fff" stroke="#edcbd5"/>
+    <text x="301" y="170" fill="#503943" font-family="monospace" font-size="20">aB7!kP2#vR9$mQ4</text>
+    <rect x="628" y="143" width="40" height="38" rx="6" fill="#fff5f7" stroke="#ffc9d8"/>
+    <path d="M642 155h13v15h-13zM638 151h13v15" fill="none" stroke="#bd5574" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="282" y="202" width="396" height="4" rx="2" fill="#ffe4ec"/>
+    <rect x="282" y="202" width="330" height="4" rx="2" fill="#e98aa5"/>
+    <text x="282" y="244" fill="#503943" font-family="Arial,sans-serif" font-size="15" font-weight="700">Tamanho da senha</text>
+    <text x="650" y="244" fill="#503943" font-family="Arial,sans-serif" font-size="15">15</text>
+    <path d="M284 267h392" stroke="#edcbd5" stroke-width="5" stroke-linecap="round"/>
+    <path d="M284 267h188" stroke="#bd5574" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="472" cy="267" r="9" fill="#bd5574" stroke="#fff" stroke-width="3"/>
+    <text x="282" y="314" fill="#503943" font-family="Arial,sans-serif" font-size="15" font-weight="700">Personalize sua senha</text>
+    <g fill="#503943" font-family="Arial,sans-serif" font-size="14">
+      <rect x="283" y="338" width="16" height="16" rx="3" fill="#bd5574"/><path d="m287 346 3 3 6-7" fill="none" stroke="#fff" stroke-width="2"/>
+      <text x="309" y="351">Letras minúsculas (a-z)</text>
+      <rect x="486" y="338" width="16" height="16" rx="3" fill="#fff" stroke="#d8c6cc"/><text x="512" y="351">Letras maiúsculas (A-Z)</text>
+      <rect x="283" y="375" width="16" height="16" rx="3" fill="#fff" stroke="#d8c6cc"/><text x="309" y="388">Números (0-9)</text>
+      <rect x="486" y="375" width="16" height="16" rx="3" fill="#fff" stroke="#d8c6cc"/><text x="512" y="388">Símbolos (!-$^+)</text>
+      <rect x="283" y="412" width="16" height="16" rx="3" fill="#fff" stroke="#d8c6cc"/><text x="309" y="425">Evitar caracteres repetidos</text>
+      <rect x="486" y="412" width="16" height="16" rx="3" fill="#fff" stroke="#d8c6cc"/><text x="512" y="425">Incluir espaços</text>
+    </g>
+    <rect x="282" y="465" width="396" height="58" rx="8" fill="#e98aa5"/>
+    <text x="480" y="501" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700">Gerar nova senha</text>
+  </g>
+</svg>
